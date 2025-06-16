@@ -60,3 +60,10 @@
     opacity: 1;
     animation: gradient-text 12s ease-in-out infinite, glow-btn 12s ease-in-out infinite;
 }
+
+.divider {
+    width: 100px;
+    border-radius: 2px;
+    height: 4px;
+    animation: gradient-text 12s ease-in-out infinite, glow-btn 12s ease-in-out infinite;
+}
