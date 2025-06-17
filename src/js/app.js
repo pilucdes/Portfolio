@@ -39,9 +39,25 @@ class App {
 
     }
 
+    setupIntersectionObserver() {
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                    observer.unobserve(entry.target); // Optional: unobserve after fading in
+                }
+            });
+        });
+
+        const fadeElements = document.querySelectorAll('.fade-in');
+        fadeElements.forEach(element => observer.observe(element));
+    }
+
     initializeUI() {
         this.translateUI();
         this.setupLanguageToggle();
+        this.setupIntersectionObserver();
     }
 
 }

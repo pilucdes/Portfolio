@@ -8,7 +8,8 @@
         @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Gabarito:wght@400..900&display=swap');
     </style>
 
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/effects.css">
     <link rel="stylesheet" href="css/components.css">
 
@@ -19,7 +20,7 @@
 <main class="breathing-cloth">
 
     <header class="absolute top-0 left-0 w-full z-10">
-        <div class="btn-list flex flex-row m-10 ml-5 gap-5 justify-end">
+        <div class="btn-list flex flex-row m-10 ml-5 gap-5 justify-end fade-in">
             <button class="btn text-white" data-i18n="cv">Curriculum Vitae</button>
             <button class="btn text-white" data-i18n="skills">Skills</button>
             <button class="btn text-white" data-i18n="projects">Projects</button>
@@ -27,17 +28,18 @@
         </div>
     </header>
 
-    <div class="mx-5 lg:mx-[150px] xl:mx-[250px] flex flex-col space-y-[250px] mb-10">
+    <div class="mx-5 lg:mx-[150px] xl:mx-[250px] flex flex-col mb-[250px]">
         <section class="h-screen flex flex-col justify-center">
 
-            <div class="flex flex-row justify-center m-10 gap-12">
+            <div class="flex flex-row justify-center m-10 gap-12 fade-in">
                 <div class="flex flex-col justify-center items-center gap-5">
                     <p class="text-4xl text-white">Hello<span style="opacity: 0.4">😊</span>! I'm </p>
                     <h1 class="gradient-text text-8xl font-medium text-center">Pierre-luc Deschesnes</h1>
                 </div>
             </div>
 
-            <div class="flex flex-row justify-center items-center gap-2 text-gray-400 text-2xl">
+            <div class="flex flex-row justify-center items-center gap-2 text-gray-400 text-2xl fade-in">
+                <div class="gradient-animated"></div>
                 <span class="text-4xl gradient-text -mono">{</span>
                 <h2 data-i18n="fullstack">Full stack developer</h2>
                 <span class="text-4xl gradient-text">,</span>
@@ -49,14 +51,15 @@
 
         </section>
 
-        <section class="flex flex-col space-y-10">
+        <section class="flex flex-col space-y-10 mb-[250px]">
 
-            <div class="flex flex-col justify-center items-center gap-2">
+            <div class="flex flex-col justify-center items-center gap-2  fade-in">
                 <h2 class="text-4xl text-white">About Me</h2>
                 <div class="divider"></div>
             </div>
 
-            <p class="text-2xl text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            <p class="text-2xl text-gray-400  fade-in">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                 ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                 voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
@@ -64,88 +67,107 @@
 
         </section>
 
-        <section class="flex flex-col space-y-10">
+        <section class="flex flex-col space-y-10 mb-[250px]">
 
-            <div class="flex flex-col justify-center items-center gap-2">
+            <div class="flex flex-col justify-center items-center gap-2  fade-in">
                 <h2 class="text-4xl text-white">My Expertise</h2>
                 <div class="divider"></div>
             </div>
 
-            <div class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-10">
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-10 ">
 
-                <div class="p-6 rounded-lg shadow-sm dark:bg-gray-800">
+                <div class="p-6 rounded-lg shadow-sm dark:bg-gray-800 fade-in">
 
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">Back
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center  fade-in ">
+                        Back
                         End</h5>
 
-                    <ul class="text-gray-700 dark:text-gray-400 text-left">
-                        <li>C#</li>
-                        <li>.NET 9</li>
-                        <li>Entity Framework</li>
-                        <li>REST APIs</li>
+                    <ul class="text-gray-700 dark:text-gray-400 text-left text-xl space-y-2 fade-in">
+                        <li class="flex items-center gap-2"><i class="colored devicon-csharp-plain"></i> C# | .NET 9
+                        </li>
+                        <li class="flex items-center gap-2"><i class="colored devicon-dot-net-plain"></i> Entity
+                            Framework
+                        </li>
+                        <li class="flex items-center gap-2"><i class="colored devicon-express-original"></i>Express.js
+                        </li>
+                        <li class="flex items-center gap-2"><i class="colored devicon-microsoftsqlserver-plain"></i>
+                            MSSQL
+                        </li>
+                        <li class="flex items-center gap-2"><i class="colored devicon-mongodb-plain"></i> MongoDB</li>
+                        <li class="flex items-center gap-2"><i class="colored devicon-postgresql-plain"></i> PostgreSQL
+                        </li>
                     </ul>
+
                 </div>
 
-                <div class="p-6 rounded-lg shadow-sm dark:bg-gray-800">
+                <div class="p-6 rounded-lg shadow-sm dark:bg-gray-800 fade-in">
 
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">Front
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center  fade-in ">
+                        Front
                         End</h5>
 
-                    <ul class="text-gray-700 dark:text-gray-400 text-left">
-                        <li>HTML/CSS</li>
-                        <li>Angular 2</li>
-                        <li>Vue.js</li>
+                    <ul class="text-gray-700 dark:text-gray-400 text-left text-xl space-y-2 fade-in">
+                        <li class="flex items-center gap-2"><i class="colored devicon-html5-plain"></i>HTML/CSS
+                        </li>
+                        <li class="flex items-center gap-2"><i class="colored devicon-angularjs-plain"></i>Angular 2
+                        </li>
+                        <li class="flex items-center gap-2"><i class="colored devicon-vuejs-plain"></i>Vue.js</li>
+                        <li class="flex items-center gap-2"><i class="colored devicon-react-plain"></i>React</li>
                     </ul>
+
                 </div>
 
-                <div class="p-6 rounded-lg shadow-sm dark:bg-gray-800">
+                <div class="p-6 rounded-lg shadow-sm dark:bg-gray-800 fade-in">
 
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">
-                        Databases &
-                        Cloud</h5>
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center  fade-in">
+                        Cloud &
+                        Tools</h5>
 
-                    <ul class="text-gray-700 dark:text-gray-400 text-left">
-                        <li>MSSQL</li>
-                        <li>MongoDB</li>
-                        <li>PostgreSQL</li>
-                        <li>Azure</li>
-                        <li>AWS</li>
+                    <ul class="text-gray-700 dark:text-gray-400 text-xl space-y-2 fade-in">
+                        <li class="flex items-center gap-2"><i class="colored devicon-azure-plain"></i> Azure</li>
+                        <li class="flex items-center gap-2"><i
+                                class="colored devicon-amazonwebservices-plain-wordmark"></i> AWS
+                        </li>
+                        <li class="flex items-center gap-2"><i class="colored devicon-docker-plain"></i>Docker</li>
                     </ul>
+
                 </div>
 
             </div>
 
         </section>
 
-        <section class="flex flex-col space-y-10">
+        <section class="flex flex-col space-y-10 mb-[250px]">
 
-            <div class="flex flex-col justify-center items-center gap-2">
+            <div class="flex flex-col justify-center items-center gap-2  fade-in">
                 <h2 class="text-4xl text-white">Featured Projects</h2>
                 <div class="divider"></div>
             </div>
 
-            <a href="https://github.com/pilouk/SnapToTable" target="_blank" class="flex flex-col items-center">
+            <a href="https://github.com/pilouk/SnapToTable" target="_blank" class="flex flex-col items-center  fade-in">
 
                 <div class="flex flex-row p-6 rounded-lg shadow-sm dark:bg-gray-800">
                     <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
                          src="https://storage.googleapis.com/cms-bgrem-deelvin-com/food_a691d3b07f/food_a691d3b07f.jpg"
                          alt="">
                     <div class="flex flex-col justify-between p-4">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Snap To Table -
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white fade-in">Snap To
+                            Table -
                             AI Recipe Generator</h5>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">A full-stack web application that
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400  fade-in">A full-stack web
+                            application that
                             uses AI to recognize ingredients from a user-uploaded photo and generate custom recipes. I
                             developed the complete solution, from the .NET backend processing images and interacting
                             with the AI model, to the responsive Vue.js frontend providing a seamless user
                             experience.</p>
 
                         <ul class="text-gray-700 dark:text-gray-400">
-                            <li class="flex flex-row gap-2">
-                                <span>C# | .NET 9</span>
-                                <span>MongoDB</span>
+                            <li class="flex flex-row gap-2 fade-in">
+                                <span class="flex items-center gap-2"><i class="colored devicon-csharp-plain"></i>C# | .NET 9</span>
+                                <span class="flex items-center gap-2"><i class="colored devicon-mongodb-plain"></i>MongoDB</span>
+                                <span class="flex items-center gap-2"><i class="colored devicon-react-plain"></i>React Native</span>
                                 <span>CQRS</span>
                                 <span>Clean Architecture</span>
-                                <span>React Native</span>
                             </li>
                         </ul>
 
@@ -153,8 +175,18 @@
                 </div>
 
             </a>
+        </section>
+
+        <section class="flex flex-col space-y-10 mb-[250px]">
+
+            <div class="flex flex-col justify-center items-center gap-2  fade-in">
+                <h2 class="text-4xl text-white">Contact Me</h2>
+                <div class="divider"></div>
+            </div>
+
 
         </section>
+
     </div>
 
 
