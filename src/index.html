@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script src="https://cdn.tailwindcss.com"></script>
-
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Gabarito:wght@400..900&display=swap');
     </style>
@@ -17,10 +17,10 @@
 </head>
 <body>
 
-<main class="breathing-cloth">
+<main class="bg-gradient">
 
     <header class="absolute top-0 left-0 w-full z-10">
-        <div class="btn-list flex flex-row m-10 ml-5 gap-5 justify-end fade-in">
+        <div class="btn-list flex flex-row m-10 ml-5 gap-5 justify-end fade-in text-xs md:text-xl">
             <button class="btn text-white" data-i18n="cv">Curriculum Vitae</button>
             <button class="btn text-white" data-i18n="skills">Skills</button>
             <button class="btn text-white" data-i18n="projects">Projects</button>
@@ -33,32 +33,33 @@
 
             <div class="flex flex-row justify-center m-10 gap-12 fade-in">
                 <div class="flex flex-col justify-center items-center gap-5">
-                    <p class="text-4xl text-white">Hello<span style="opacity: 0.4">😊</span>! I'm </p>
-                    <h1 class="gradient-text text-8xl font-medium text-center">Pierre-luc Deschesnes</h1>
+                    <p class="text-2xl md:text-5xl text-white">Hello<span style="opacity: 0.4">😊</span>! I'm </p>
+                    <h1 class="text-3xl md:text-8xl gradient-text font-medium text-center">Pierre-luc Deschesnes</h1>
                 </div>
             </div>
 
-            <div class="flex flex-row justify-center items-center gap-2 text-gray-400 text-2xl fade-in">
+            <div class="flex flex-row justify-center items-center gap-2 text-gray-400 text-md md:text-3xl fade-in">
                 <div class="gradient-animated"></div>
-                <span class="text-4xl gradient-text -mono">{</span>
+                <span class="text-xl md:text-5xl gradient-text -mono">{</span>
                 <h2 data-i18n="fullstack">Full stack developer</h2>
-                <span class="text-4xl gradient-text">,</span>
+                <span class="text-xl md:text-5xl gradient-text">,</span>
                 <h2 data-i18n="15xp">15+ years experience</h2>
-                <span class="text-4xl gradient-text">,</span>
-                <h2 data-i18n="lovetea">Love tea 🍵</h2>  <span class="cursor"></span>
-                <span class="text-4xl gradient-text -mono">} </span>
+                <span class="text-xl md:text-5xl gradient-text">,</span>
+                <h2 data-i18n="lovetea">Love tea 🍵</h2><span class="cursor"></span>
+                <span class="text-xl md:text-5xl gradient-text -mono">} </span>
             </div>
 
         </section>
 
-        <section class="flex flex-col space-y-10 mb-[250px]">
+        <section class="flex flex-col space-y-10 mb-[50px] md:mb-[250px]">
 
-            <div class="flex flex-col justify-center items-center gap-2  fade-in">
-                <h2 class="text-4xl text-white">About Me</h2>
+            <div class="flex flex-col justify-center items-center gap-2 fade-in">
+                <h2 class="text-2xl md:text-5xl text-white">About Me</h2>
                 <div class="divider"></div>
             </div>
 
-            <p class="text-2xl text-gray-400  fade-in">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            <p class="text-xl md:text-3xl text-gray-400 fade-in">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do
                 eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                 ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
@@ -67,28 +68,28 @@
 
         </section>
 
-        <section class="flex flex-col space-y-10 mb-[250px]">
+        <section class="flex flex-col space-y-10 mb-[50px] md:mb-[250px]">
 
             <div class="flex flex-col justify-center items-center gap-2  fade-in">
-                <h2 class="text-4xl text-white">My Expertise</h2>
+                <h2 class="text-2xl md:text-5xl text-white">My Expertise</h2>
                 <div class="divider"></div>
             </div>
 
-            <div class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-10 ">
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-10">
 
                 <div class="p-6 rounded-lg shadow-sm dark:bg-gray-800 fade-in">
 
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center  fade-in ">
+                    <h5 class="mb-2 text-xl md:text-3xl font-bold tracking-tight text-gray-900 dark:text-white text-center  fade-in ">
                         Back
                         End</h5>
 
-                    <ul class="text-gray-700 dark:text-gray-400 text-left text-xl space-y-2 fade-in">
+                    <ul class="text-gray-700 dark:text-gray-400 text-left text-md md:text-xl space-y-2 fade-in">
                         <li class="flex items-center gap-2"><i class="colored devicon-csharp-plain"></i> C# | .NET 9
                         </li>
                         <li class="flex items-center gap-2"><i class="colored devicon-dot-net-plain"></i> Entity
                             Framework
                         </li>
-                        <li class="flex items-center gap-2"><i class="colored devicon-express-original"></i>Express.js
+                        <li class="flex items-center gap-2"><i class="colored devicon-nodejs-plain"></i>Node.js
                         </li>
                         <li class="flex items-center gap-2"><i class="colored devicon-microsoftsqlserver-plain"></i>
                             MSSQL
@@ -102,11 +103,11 @@
 
                 <div class="p-6 rounded-lg shadow-sm dark:bg-gray-800 fade-in">
 
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center  fade-in ">
+                    <h5 class="mb-2 text-xl md:text-3xl font-bold tracking-tight text-gray-900 dark:text-white text-center fade-in ">
                         Front
                         End</h5>
 
-                    <ul class="text-gray-700 dark:text-gray-400 text-left text-xl space-y-2 fade-in">
+                    <ul class="text-gray-700 dark:text-gray-400 text-left text-md md:text-xl space-y-2 fade-in">
                         <li class="flex items-center gap-2"><i class="colored devicon-html5-plain"></i>HTML/CSS
                         </li>
                         <li class="flex items-center gap-2"><i class="colored devicon-angularjs-plain"></i>Angular 2
@@ -119,11 +120,11 @@
 
                 <div class="p-6 rounded-lg shadow-sm dark:bg-gray-800 fade-in">
 
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center  fade-in">
+                    <h5 class="mb-2 text-xl md:text-3xl font-bold tracking-tight text-gray-900 dark:text-white text-center fade-in">
                         Cloud &
                         Tools</h5>
 
-                    <ul class="text-gray-700 dark:text-gray-400 text-xl space-y-2 fade-in">
+                    <ul class="text-gray-700 dark:text-gray-400 text-md md:text-xl space-y-2 fade-in">
                         <li class="flex items-center gap-2"><i class="colored devicon-azure-plain"></i> Azure</li>
                         <li class="flex items-center gap-2"><i
                                 class="colored devicon-amazonwebservices-plain-wordmark"></i> AWS
@@ -137,53 +138,61 @@
 
         </section>
 
-        <section class="flex flex-col space-y-10 mb-[250px]">
+        <section class="flex flex-col space-y-10 mb-[50px] md:mb-[250px]">
 
             <div class="flex flex-col justify-center items-center gap-2  fade-in">
-                <h2 class="text-4xl text-white">Featured Projects</h2>
+                <h2 class="text-2xl md:text-5xl text-white">Featured Projects</h2>
                 <div class="divider"></div>
             </div>
 
-            <a href="https://github.com/pilouk/SnapToTable" target="_blank" class="flex flex-col items-center  fade-in">
+            <a href="https://github.com/pilouk/SnapToTable" target="_blank">
 
-                <div class="flex flex-row p-6 rounded-lg shadow-sm dark:bg-gray-800">
-                    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
-                         src="https://storage.googleapis.com/cms-bgrem-deelvin-com/food_a691d3b07f/food_a691d3b07f.jpg"
-                         alt="">
-                    <div class="flex flex-col justify-between p-4">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white fade-in">Snap To
+                <div class="md:flex md:flex-row p-6 rounded-lg shadow-sm dark:bg-gray-800 items-center gap-3 fade-in">
+
+                    <img class="object-cover md:h-64 h-20 w-full md:w-52 sm:rounded-lg md:rounded-s-lg fade-in"
+                         src="https://storage.googleapis.com/cms-bgrem-deelvin-com/food_a691d3b07f/food_a691d3b07f.jpg" alt="snaptotable">
+
+                    <div>
+                        <h5 class="mb-2 text-xl md:text-3xl font-bold tracking-tight text-gray-900 dark:text-white fade-in">
+                            Snap To
                             Table -
                             AI Recipe Generator</h5>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400  fade-in">A full-stack web
+
+                        <p class="mb-3 text-md md:text-xl text-gray-700 dark:text-gray-400 fade-in">A full-stack web
                             application that
                             uses AI to recognize ingredients from a user-uploaded photo and generate custom recipes. I
                             developed the complete solution, from the .NET backend processing images and interacting
                             with the AI model, to the responsive Vue.js frontend providing a seamless user
                             experience.</p>
 
-                        <ul class="text-gray-700 dark:text-gray-400">
-                            <li class="flex flex-row gap-2 fade-in">
-                                <span class="flex items-center gap-2"><i class="colored devicon-csharp-plain"></i>C# | .NET 9</span>
-                                <span class="flex items-center gap-2"><i class="colored devicon-mongodb-plain"></i>MongoDB</span>
-                                <span class="flex items-center gap-2"><i class="colored devicon-react-plain"></i>React Native</span>
-                                <span>CQRS</span>
-                                <span>Clean Architecture</span>
-                            </li>
-                        </ul>
+                        <div class="flex flex-col md:flex-row gap-2 text-gray-700 dark:text-gray-400 fade-in items-center">
+                            <div class="flex items-center gap-2"><i class="colored devicon-csharp-plain"></i>C# | .NET 9
+                            </div>
+                            <span class="flex items-center gap-2"><i
+                                    class="colored devicon-mongodb-plain"></i>MongoDB</span>
+                            <span class="flex items-center gap-2"><i class="colored devicon-react-plain"></i>React Native</span>
+                            <span>CQRS</span>
+                            <span>Clean Architecture</span>
+                        </div>
 
                     </div>
                 </div>
-
             </a>
+
         </section>
 
-        <section class="flex flex-col space-y-10 mb-[250px]">
+        <section class="flex flex-col space-y-10 mb-[50px] md:mb-[250px]">
 
             <div class="flex flex-col justify-center items-center gap-2  fade-in">
-                <h2 class="text-4xl text-white">Contact Me</h2>
+                <h2 class="text-2xl md:text-5xl text-white">Let's Connect</h2>
                 <div class="divider"></div>
             </div>
 
+            <div class="flex flex-row gap-12 justify-center text-5xl md:text-7xl fade-in">
+                <a href="https://www.linkedin.com/in/pierre-luc-deschesnes-467193144/" target="_blank"
+                   class="gradient-text devicon-linkedin-plain"></a>
+                <a href="mailto:pilucdes@gmail.com" class="gradient-text">✉</a>
+            </div>
 
         </section>
 

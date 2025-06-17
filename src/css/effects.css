@@ -35,21 +35,21 @@
     }
 }
 
-.breathing-cloth {
+.bg-gradient {
     position: relative;
     overflow: hidden;
 }
 
-.breathing-cloth::after {
+.bg-gradient::after {
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at 0% 100%, rgba(88, 166, 255, 0.05) 100%, transparent 80%),
-    radial-gradient(circle at 100% 0%, rgba(163, 113, 247, 0.05) 100%, transparent 80%);
-    animation: float 20s ease-in-out infinite;
+    background: radial-gradient(circle at 0% 100%, rgba(88, 166, 255, 0.05) 75%, transparent 90%),
+    radial-gradient(circle at 100% 0%, rgba(163, 113, 247, 0.05) 75%, transparent 90%);
     pointer-events: none;
     z-index: -1;
 }
+
 
 @keyframes blink {
     0%, 50% {
