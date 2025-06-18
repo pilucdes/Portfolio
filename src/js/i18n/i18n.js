@@ -4,15 +4,10 @@
         this.translations = {};
     }
 
-    async init(locales = ['en','fr']) {
-        try {
-            await Promise.all(
-                locales.map(locale => this.loadTranslations(locale))
-            );
-        } catch (error) {
-            console.error('Failed to initialize translations:', error);
-            throw error;
-        }
+    async init(locales = ['en', 'fr']) {
+        await Promise.all(
+            locales.map(locale => this.loadTranslations(locale))
+        );
     }
 
     setLocale(locale) {
@@ -20,13 +15,8 @@
     }
 
     async loadTranslations(locale) {
-        try {
-            const response = await fetch(`js/i18n/resources/${locale}.json`);
-            this.translations[locale] = await response.json();
-        } catch (error) {
-            console.error(`Error loading translations for ${locale}:`, error);
-            throw error;
-        }
+        const response = await fetch(`js/i18n/resources/${locale}.json`);
+        this.translations[locale] = await response.json();
     }
 
     translate(key, fallbackValue = null) {
