@@ -4,7 +4,7 @@
         this.translations = {};
     }
 
-    async init(locales = ['en', 'fr']) {
+    async initialize(locales) {
         await Promise.all(
             locales.map(locale => this.loadTranslations(locale))
         );
