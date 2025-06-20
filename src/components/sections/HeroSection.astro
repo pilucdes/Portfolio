@@ -1,4 +1,10 @@
-﻿<section class="h-screen flex flex-col justify-center">
+﻿---
+import {useTranslations, getLangFromUrl} from "../../scripts/services/i18nService";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+<section class="h-screen flex flex-col justify-center">
 
     <div class="flex flex-row justify-center m-10 gap-12">
         <div class="flex flex-col justify-center items-center gap-5">
@@ -12,11 +18,11 @@
 
     <div class="flex flex-row justify-center items-center gap-2 text-gray-400 text-md md:text-2xl lg:text-3xl delay-300 fade-in ">
         <span class="text-xl lg:text-5xl gradient-text -mono">{'{'}</span>
-        <h2 data-i18n="fullstack"></h2>
+        <h2>{t("fullstack")}</h2>
         <span class="text-xl lg:text-5xl gradient-text">,</span>
-        <h2 data-i18n="15xp"></h2>
+        <h2>{t("15xp")}</h2>
         <span class="text-xl lg:text-5xl gradient-text">,</span>
-        <h2 data-i18n="lovetea"></h2><span class="cursor"></span>
+        <h2>{t("lovetea")}</h2><span class="cursor"></span>
         <span class="text-xl lg:text-5xl gradient-text -mono">{'}'} </span>
     </div>
 

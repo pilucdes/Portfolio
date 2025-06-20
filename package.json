@@ -13,6 +13,11 @@
     "@fontsource/gabarito": "^5.2.6",
     "@tailwindcss/vite": "^4.1.10",
     "astro": "^5.10.0",
+    "astro-icon": "^1.1.5",
     "tailwindcss": "^4.1.10"
+  },
+  "devDependencies": {
+    "@iconify-json/devicon": "^1.2.29",
+    "@iconify-json/devicon-plain": "^1.2.28"
   }
 }

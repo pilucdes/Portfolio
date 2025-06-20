@@ -1,13 +1,14 @@
 ﻿---
+import { Icon } from 'astro-icon/components';
 interface Props {
     text: string;
-    iconClass: string;
+    iconName: string;
 }
 
-const {text, iconClass} = Astro.props;
+const {text, iconName} = Astro.props;
 ---
 
 <li class="flex items-center gap-2">
-    <i class:list={["colored", iconClass]}></i>
+    <Icon name={iconName}/>
     {text}
 </li>
