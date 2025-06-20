@@ -1,0 +1,81 @@
+---
+import Layout from "../layouts/Layout.astro";
+import IconListItem from "../components/IconListItem.astro";
+import ExpertiseCard from "../components/cards/ExpertiseCard.astro";
+import ProjectCard from "../components/cards/ProjectCard.astro";
+import HeroSection from "../components/sections/HeroSection.astro";
+import PageSection from "../components/sections/PageSection.astro";
+import Nav from "../components/Nav.astro";
+
+---
+<Layout>
+
+    <Nav/>
+
+    <div class="mx-5 lg:mx-[150px] xl:mx-[250px]">
+
+        <HeroSection/>
+
+        <PageSection title="About Me">
+            <p class="text-xl lg:text-3xl text-gray-400 fade-in">Lorem ipsum dolor sit amet...</p>
+        </PageSection>
+
+        <PageSection id="skills" title="My Expertise">
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-10">
+
+                <ExpertiseCard title="Back End">
+                    <IconListItem text="C# | .NET 9" iconClass="devicon-csharp-plain"/>
+                    <IconListItem text="Entity Framework" iconClass="devicon-dot-net-plain"/>
+                    <IconListItem text="Node.js" iconClass="devicon-nodejs-plain"/>
+                    <IconListItem text="MSSQL" iconClass="devicon-microsoftsqlserver-plain"/>
+                    <IconListItem text="MongoDB" iconClass="devicon-mongodb-plain"/>
+                    <IconListItem text="PostgreSQL" iconClass="devicon-postgresql-plain"/>
+                </ExpertiseCard>
+
+                <ExpertiseCard title="Front End">
+                    <IconListItem text="HTML/CSS" iconClass="devicon-html5-plain"/>
+                    <IconListItem text="Angular 2" iconClass="devicon-angularjs-plain"/>
+                    <IconListItem text="Vue.js" iconClass="devicon-vuejs-plain"/>
+                    <IconListItem text="React" iconClass="devicon-react-plain"/>
+                </ExpertiseCard>
+
+                <ExpertiseCard title="Cloud & Tools">
+                    <IconListItem text="Azure" iconClass="devicon-azure-plain"/>
+                    <IconListItem text="AWS" iconClass="devicon-amazonwebservices-plain-wordmark"/>
+                    <IconListItem text="Docker" iconClass="devicon-docker-plain"/>
+                </ExpertiseCard>
+
+            </div>
+        </PageSection>
+
+        <PageSection id="projects" title="Featured Projects">
+            <ProjectCard
+                    href="https://github.com/pilouk/SnapToTable"
+                    imageUrl="https://storage.googleapis.com/cms-bgrem-deelvin-com/food_a691d3b07f/food_a691d3b07f.jpg"
+                    title="Snap To Table - AI Recipe Generator"
+                    description={`A full-stack web application that uses AI to recognize 
+                    ingredients from a user-uploaded photo and generate custom recipes. I developed 
+                    the complete solution, from the .NET backend processing images and interacting 
+                    with the AI model, to the responsive React Native frontend providing a seamless 
+                    user experience.`}>
+
+                <div slot="technologies">
+                    <IconListItem iconClass="devicon-csharp-plain" text="C# | .NET 9"/>
+                    <IconListItem iconClass="devicon-mongodb-plain" text="MongoDB"/>
+                    <IconListItem iconClass="devicon-react-plain" text="React Native"/>
+                    <IconListItem iconClass="" text="CQRS"/>
+                    <IconListItem iconClass="" text="Clean Architecture"/>
+                </div>
+            </ProjectCard>
+        </PageSection>
+
+        <PageSection id="connect" title="Let's Connect">
+            <div class="flex flex-row gap-12 justify-center text-5xl lg:text-7xl fade-in">
+                <a href="https://www.linkedin.com/in/pierre-luc-deschesnes-467193144/" target="_blank"
+                   class="gradient-text devicon-linkedin-plain link-item"></a>
+                <a href="mailto:pilucdes@gmail.com" class="gradient-text link-item">✉</a>
+            </div>
+        </PageSection>
+
+    </div>
+</Layout>

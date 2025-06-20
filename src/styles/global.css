@@ -1,0 +1,19 @@
+@import '@fontsource/fira-code';
+@import '@fontsource/gabarito';
+
+@import 'tailwindcss';
+
+@import "./components.css";
+@import "./effects.css";
+
+body {
+    background: #111111;
+    font-family: "Gabarito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}

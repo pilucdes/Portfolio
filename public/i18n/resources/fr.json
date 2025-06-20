@@ -2,8 +2,9 @@
   "cv": "Curriculum Vitæ",
   "skills": "Expérience",
   "projects": "Projets",
+  "connect": "Connectons-nous",
   "fullstack": "Développeur logiciel",
   "15xp": "15+ année d'expérience",
-  "lovetea": "Adore le thé \uD83C\uDF75",
-  "i18n.language": "EN"
+  "lovetea": "Adore le \uD83C\uDF75",
+  "i18n.language": "English"
 }

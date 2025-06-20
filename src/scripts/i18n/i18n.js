@@ -15,7 +15,7 @@
     }
 
     async loadTranslations(locale) {
-        const response = await fetch(`js/i18n/resources/${locale}.json`);
+        const response = await fetch(`./i18n/resources/${locale}.json`);
         this.translations[locale] = await response.json();
     }
 

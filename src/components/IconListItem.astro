@@ -1,0 +1,13 @@
+﻿---
+interface Props {
+    text: string;
+    iconClass: string;
+}
+
+const {text, iconClass} = Astro.props;
+---
+
+<li class="flex items-center gap-2">
+    <i class:list={["colored", iconClass]}></i>
+    {text}
+</li>

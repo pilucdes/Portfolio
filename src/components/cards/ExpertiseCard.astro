@@ -1,0 +1,15 @@
+﻿---
+interface Props {
+    title: string;
+}
+
+const { title } = Astro.props;
+---
+<div class="p-6 rounded-lg shadow-sm dark:bg-gray-800 fade-in">
+    <h5 class="mb-2 text-xl lg:text-3xl font-bold tracking-tight text-white text-center fade-in">
+        {title}
+    </h5>
+    <ul class="text-gray-400 text-left text-md lg:text-xl space-y-2 fade-in">
+        <slot />
+    </ul>
+</div>

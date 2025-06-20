@@ -1,0 +1,32 @@
+﻿---
+interface Props {
+    href: string;
+    imageUrl: string;
+    title: string;
+    description:string;
+}
+
+const { href, imageUrl, title,description } = Astro.props;
+---
+<a href={href} target="_blank" class="link-item">
+    <div class="md:flex md:flex-row p-6 rounded-lg shadow-sm dark:bg-gray-800 items-center gap-3 fade-in hover:bg-gray-700 transition-colors duration-300">
+
+        <img class="object-cover md:h-64 h-20 w-full md:w-52 sm:rounded-lg md:rounded-s-lg fade-in"
+             src={imageUrl}
+             alt={title}>
+
+        <div>
+            <h5 class="mb-2 text-xl lg:text-3xl font-bold tracking-tight text-gray-900 dark:text-white fade-in">
+                {title}
+            </h5>
+
+            <p class="mb-3 text-md lg:text-xl text-gray-400 fade-in">
+                {description}
+            </p>
+
+            <div class="flex flex-wrap gap-x-4 gap-y-2 text-gray-400 fade-in items-center">
+                <slot name="technologies" />
+            </div>
+        </div>
+    </div>
+</a>
