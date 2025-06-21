@@ -77,12 +77,25 @@ export function getStaticPaths() {
         </PageSection>
 
         <PageSection id="connect" title={t("section.connect.title")}>
-            <div class="flex flex-row gap-12 justify-center text-5xl lg:text-7xl connect-item fade-in">
+            <div class="flex flex-row gap-12 justify-center items-center text-5xl lg:text-7xl connect-item fade-in">
                 <a href="https://www.linkedin.com/in/pierre-luc-deschesnes-467193144/" class="link-item"
                    aria-label="Pierre-luc linkedin" target="_blank" rel="noopener noreferrer">
                     <Icon name="devicon-plain:linkedin"/>
                 </a>
-                <a href="mailto:pilucdes@gmail.com" aria-label="Email me" class="link-item">✉</a>
+                <a href="mailto:pilucdes@gmail.com" aria-label="Email me" class="link-item">
+                    <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="w-20 h-20"
+                    >
+                        <rect width="20" height="16" x="2" y="4" rx="2" />
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                    </svg>
+                </a>
             </div>
         </PageSection>
 
