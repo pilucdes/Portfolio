@@ -4,11 +4,11 @@ import {useTranslations, getLangFromUrl} from "../../scripts/services/i18nServic
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
-<section class="h-screen flex flex-col justify-center">
+<section class="min-h-screen flex flex-col justify-center">
 
     <div class="flex flex-row justify-center m-10 gap-12">
         <div class="flex flex-col justify-center items-center gap-5">
-            <p class="text-2xl lg:text-5xl text-white fade-in delay-100 ">{t("hero.hello")}<span
+            <p class="text-2xl lg:text-5xl text-white fade-in delay-100 ">{t("hero.hello")}<span role="img" aria-label="waving hand"
                     class="opacity-40">😊</span>! {t("hero.Im")} </p>
             <h1 class="text-3xl md:text-4xl lg:text-8xl gradient-text font-medium text-center delay-200 fade-in ">
                 Pierre-luc
@@ -16,14 +16,14 @@ const t = useTranslations(lang);
         </div>
     </div>
 
-    <div class="flex flex-row justify-center items-center gap-2 text-gray-400 text-md md:text-2xl lg:text-3xl delay-300 fade-in ">
+    <h2 class="flex flex-row justify-center items-center gap-2 text-md md:text-2xl lg:text-3xl delay-300 fade-in ">
         <span class="text-xl lg:text-5xl gradient-text -mono">{'{'}</span>
-        <h2>{t("hero.dev")}</h2>
+        <span>{t("hero.dev")}</span>
         <span class="text-xl lg:text-5xl gradient-text">,</span>
-        <h2>{t("hero.15xp")}</h2>
+        <span>{t("hero.15xp")}</span>
         <span class="text-xl lg:text-5xl gradient-text">,</span>
-        <h2>{t("hero.lovetea")}</h2><span class="cursor"></span>
+        <span>{t("hero.lovetea")}</span><span class="cursor"></span>
         <span class="text-xl lg:text-5xl gradient-text -mono">{'}'} </span>
-    </div>
+    </h2>
 
 </section>

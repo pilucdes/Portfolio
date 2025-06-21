@@ -10,10 +10,14 @@
   "hero.15xp": "15 years of experience",
   "hero.lovetea": "Love \uD83C\uDF75",
   "section.about.title": "About me",
-  "section.expertise.title": "Toolset",
-  "section.expertise.platformtooling": "Platforms & Tooling",
+  "section.about.description1": "Throughout my 15-year career, I've evolved from building desktop applications to architecting cloud-based solutions. My journey has taken me from analyzing business requirements to architecting complex systems, but what truly drives me is the intersection of technology and creativity.",
+  "section.about.description2": "Beyond professional development, I'm deeply passionate about game \uD83D\uDD79\uFE0F prototyping and development. There's something magical about bringing interactive experiences to life whether I'm experimenting with new gameplay mechanics. This creative outlet keeps my problem-solving skills sharp and my enthusiasm for technology burning bright.",
+  "section.about.description3": "When I step away from the screen, you'll find me on running trails, where I find mental clarity. I also love spending time training my dog \uD83D\uDC15\u200D\uD83E\uDDBA, which has surprisingly taught me valuable lessons about patience, consistency, and clear communication skills that translate beautifully to software development and team collaboration.",
+  "section.expertise.title": "Technical skills",
+  "section.expertise.proficient": "Proficient in",
+  "section.expertise.familiarwith": "Familiar with",
   "section.featuredprojects.title": "Featured projects",
   "project.snap.title": "Snap To Table - AI Recipe Generator",
-  "project.snap.description": "A full-stack web application that uses AI to recognize\ningredients from a user-uploaded photo and generate custom recipes. I developed\nthe complete solution, from the .NET backend processing images and interacting\nwith the AI model, to the responsive React Native frontend providing a seamless\nuser experience.",
+  "project.snap.description": "Architected and developed a full-stack AI application to generate recipes from food photos. Implemented a robust backend using .NET, CQRS, and Clean Architecture to handle image processing and AI model interaction. Created a responsive, cross-platform user experience using React Native.",
   "section.connect.title": "Let's connect"
 }

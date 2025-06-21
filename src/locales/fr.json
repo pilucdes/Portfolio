@@ -10,10 +10,14 @@
   "hero.15xp": "15 années d'expérience",
   "hero.lovetea": "Adore le \uD83C\uDF75",
   "section.about.title": "À propos de moi",
+  "section.about.description1": "Au cours de mes 15 années de carrière, j'ai évolué de la création d'applications de bureau à l'architecture de solutions basées sur le cloud. Mon parcours m'a mené de l'analyse des exigences métier à l'architecture de systèmes complexes, mais ce qui me motive vraiment, c'est l'intersection entre la technologie et la créativité.",
+  "section.about.description2": "Au-delà du développement professionnel, je suis profondément passionné par le prototypage et le développement de jeux 🕹️. Il y a quelque chose de magique à donner vie à des expériences interactives, que j'expérimente de nouvelles mécaniques de jeu ou non. Cette expression créative maintient mes compétences en résolution de problèmes aiguisées et mon enthousiasme pour la technologie bien vivant.",
+  "section.about.description3": "Quand je m'éloigne de l'écran, vous me trouverez sur les sentiers de course, où je trouve la clarté mentale. J'aime aussi passer du temps à entraîner mon chien 🐕‍🦺, ce qui m'a étonnamment enseigné de précieuses leçons sur la patience, la constance et des compétences de communication claire qui se transposent magnifiquement au développement logiciel et à la collaboration d'équipe.",
   "section.expertise.title": "Compétences",
-  "section.expertise.platformtooling": "Plateformes et Outils",
+  "section.expertise.proficient": "Maîtrise de",
+  "section.expertise.familiarwith": "Familier avec",
   "section.featuredprojects.title": "Réalisations",
   "project.snap.title": "Snap To Table - Générateur de recettes par IA",
-  "project.snap.description": "Une application web full-stack qui utilise l'IA pour reconnaître les ingrédients à partir d'une photo importée par l'utilisateur et générer des recettes personnalisées. J'ai développé la solution complète, du backend .NET assurant le traitement des images et l'interaction avec le modèle d'IA, au frontend responsive en React Native offrant une expérience utilisateur fluide.",
+  "project.snap.description": "Conception et développement d'une application full-stack d'IA capable de générer des recettes à partir de photos d'aliments. Implémentation d'un backend robuste avec .NET, CQRS et Clean Architecture pour la gestion du traitement d'images et l'interaction avec le modèle d'IA. Création d'une expérience utilisateur responsive et multiplateforme avec React Native.",
   "section.connect.title": "Contactez-moi"
 }

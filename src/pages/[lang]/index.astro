@@ -24,38 +24,38 @@ export function getStaticPaths() {
 
     <Nav/>
 
-    <div class="mx-5 lg:mx-[150px] xl:mx-[250px]">
+    <div class="container mx-auto">
 
         <HeroSection/>
 
-        <PageSection title={t("section.about.title")}>
-            <p class="text-xl lg:text-3xl text-gray-400 fade-in">Lorem ipsum dolor sit amet...</p>
+        <PageSection title={t("section.about.title")} class="text-center md:text-start text-xl lg:text-3xl whitespace-pre-line">
+            <p class="delay-100 fade-in">{t("section.about.description1")}</p>
+            <p class="delay-200 fade-in">{t("section.about.description2")}</p>
+            <p class="delay-300 fade-in">{t("section.about.description3")}</p>
         </PageSection>
 
         <PageSection id="skills" title={t("section.expertise.title")}>
-            <div class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-10">
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-10 ">
 
-                <ExpertiseCard title="Back End" class="delay-100">
-                    <IconListItem text="C# | .NET 9" iconName="devicon:csharp"/>
+                <ExpertiseCard title={t("section.expertise.proficient")} class="delay-100">
+                    <IconListItem text="C#" iconName="devicon:csharp"/>
+                    <IconListItem text="Blazor" iconName="devicon:blazor"/>
                     <IconListItem text="Entity Framework" iconName="devicon:dot-net"/>
-                    <IconListItem text="Node.js" iconName="devicon:nodejs"/>
                     <IconListItem text="MSSQL" iconName="devicon:microsoftsqlserver"/>
                     <IconListItem text="MongoDB" iconName="devicon:mongodb"/>
-                    <IconListItem text="PostgreSQL" iconName="devicon:postgresql"/>
+                    <IconListItem text="Azure" iconName="devicon:azure"/>
+                    <IconListItem text="Docker" iconName="devicon:docker"/>
                 </ExpertiseCard>
 
-                <ExpertiseCard title="Front End" class="delay-200">
+                <ExpertiseCard title={t("section.expertise.familiarwith")} class="delay-200">
                     <IconListItem text="Tailwind CSS" iconName="devicon:tailwindcss"/>
                     <IconListItem text="Angular 2" iconName="devicon:angular"/>
                     <IconListItem text="React" iconName="devicon:react"/>
                     <IconListItem text="Vue.js" iconName="devicon:vuejs"/>
                     <IconListItem text="Astro" iconName="devicon-plain:astro"/>
-                </ExpertiseCard>
-
-                <ExpertiseCard title={t("section.expertise.platformtooling")} class="delay-300">
-                    <IconListItem text="Azure" iconName="devicon:azure"/>
+                    <IconListItem text="Node.js" iconName="devicon:nodejs"/>
                     <IconListItem text="AWS" iconName="devicon-plain:amazonwebservices-wordmark"/>
-                    <IconListItem text="Docker" iconName="devicon:docker"/>
+                    <IconListItem text="PostgreSQL" iconName="devicon:postgresql"/>
                 </ExpertiseCard>
 
             </div>
@@ -69,21 +69,20 @@ export function getStaticPaths() {
                     description={t("project.snap.description")}>
 
                 <ul slot="technologies">
-                    <IconListItem text="C# | .NET 9" iconName="devicon:csharp"/>
+                    <IconListItem text="C#" iconName="devicon:csharp"/>
                     <IconListItem text="MongoDB" iconName="devicon:mongodb"/>
                     <IconListItem text="React Native" iconName="devicon:react"/>
-                    <IconListItem text="CQRS"/>
-                    <IconListItem text="Clean Architecture"/>
                 </ul>
             </ProjectCard>
         </PageSection>
 
         <PageSection id="connect" title={t("section.connect.title")}>
-            <div class="flex flex-row gap-12 justify-center text-5xl lg:text-7xl text-[#6232a8] fade-in">
-                <a href="https://www.linkedin.com/in/pierre-luc-deschesnes-467193144/" class="link-item" aria-label="Pierre-luc linkedin" target="_blank">
+            <div class="flex flex-row gap-12 justify-center text-5xl lg:text-7xl connect-item fade-in">
+                <a href="https://www.linkedin.com/in/pierre-luc-deschesnes-467193144/" class="link-item"
+                   aria-label="Pierre-luc linkedin" target="_blank" rel="noopener noreferrer">
                     <Icon name="devicon-plain:linkedin"/>
                 </a>
-                <a href="mailto:pilucdes@gmail.com" class="link-item">✉</a>
+                <a href="mailto:pilucdes@gmail.com" aria-label="Email me" class="link-item">✉</a>
             </div>
         </PageSection>
 

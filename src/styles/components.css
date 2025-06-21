@@ -77,3 +77,7 @@
 .link-item:hover {
     transform: translateY(-10px);
 }
+
+.connect-item{
+    color: #6232a8;
+}

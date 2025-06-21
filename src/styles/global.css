@@ -6,6 +6,12 @@
 @import "./components.css";
 @import "./effects.css";
 
+@layer base {
+    body {
+        @apply text-gray-400;
+    }
+}
+
 body {
     background: #111111;
     font-family: "Gabarito", sans-serif;

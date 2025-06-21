@@ -3,12 +3,13 @@ import HeaderSection from "./HeaderSection.astro";
 interface Props {
     title: string;
     id?: string;
+    class?: string
 }
 
-const {title, id} = Astro.props;
+const {title, id,class: className} = Astro.props;
 ---
 
-<section id={id} class="flex flex-col space-y-10 mb-[80px] lg:mb-[250px]">
+<section id={id} class:list={["flex flex-col space-y-10 mb-[80px] lg:mb-[250px]",className]}>
     <HeaderSection title={title}/>
     <slot/>
 </section>
