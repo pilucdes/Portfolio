@@ -1,10 +1,19 @@
 ﻿{
   "cv": "Curriculum Vitæ",
-  "skills": "Skills",
-  "projects": "Projects",
-  "connect": "Let's Connect",
-  "fullstack": "Software Developer",
-  "15xp": "15 years of experience",
-  "lovetea": "love \uD83C\uDF75",
-  "i18n.language": "Français"
+  "nav.skills": "Skills",
+  "nav.projects": "Projects",
+  "nav.connect": "Let's Connect",
+  "nav.language": "Français",
+  "hero.hello": "Hello",
+  "hero.Im": "i'm",
+  "hero.dev": "Software Developer",
+  "hero.15xp": "15 years of experience",
+  "hero.lovetea": "Love \uD83C\uDF75",
+  "section.about.title": "About Me",
+  "section.expertise.title": "My Expertise",
+  "section.expertise.platformtooling": "Platforms & Tooling",
+  "section.featuredprojects.title": "Featured Projects",
+  "project.snap.title": "Snap To Table - AI Recipe Generator",
+  "project.snap.description": "A full-stack web application that uses AI to recognize\ningredients from a user-uploaded photo and generate custom recipes. I developed\nthe complete solution, from the .NET backend processing images and interacting\nwith the AI model, to the responsive React Native frontend providing a seamless\nuser experience.",
+  "section.connect.title": "Let's Connect"
 }

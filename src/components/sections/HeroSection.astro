@@ -8,8 +8,8 @@ const t = useTranslations(lang);
 
     <div class="flex flex-row justify-center m-10 gap-12">
         <div class="flex flex-col justify-center items-center gap-5">
-            <p class="text-2xl lg:text-5xl text-white fade-in delay-100 ">Hello<span
-                    class="opacity-40">😊</span>! I'm </p>
+            <p class="text-2xl lg:text-5xl text-white fade-in delay-100 ">{t("hero.hello")}<span
+                    class="opacity-40">😊</span>! {t("hero.Im")} </p>
             <h1 class="text-3xl md:text-4xl lg:text-8xl gradient-text font-medium text-center delay-200 fade-in ">
                 Pierre-luc
                 Deschesnes</h1>
@@ -18,11 +18,11 @@ const t = useTranslations(lang);
 
     <div class="flex flex-row justify-center items-center gap-2 text-gray-400 text-md md:text-2xl lg:text-3xl delay-300 fade-in ">
         <span class="text-xl lg:text-5xl gradient-text -mono">{'{'}</span>
-        <h2>{t("fullstack")}</h2>
+        <h2>{t("hero.dev")}</h2>
         <span class="text-xl lg:text-5xl gradient-text">,</span>
-        <h2>{t("15xp")}</h2>
+        <h2>{t("hero.15xp")}</h2>
         <span class="text-xl lg:text-5xl gradient-text">,</span>
-        <h2>{t("lovetea")}</h2><span class="cursor"></span>
+        <h2>{t("hero.lovetea")}</h2><span class="cursor"></span>
         <span class="text-xl lg:text-5xl gradient-text -mono">{'}'} </span>
     </div>
 
