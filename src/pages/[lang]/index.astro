@@ -28,10 +28,20 @@ export function getStaticPaths() {
 
         <HeroSection/>
 
-        <PageSection title={t("section.about.title")} class="text-center md:text-start text-xl lg:text-3xl whitespace-pre-line">
-            <p class="delay-100 fade-in">{t("section.about.description1")}</p>
-            <p class="delay-200 fade-in">{t("section.about.description2")}</p>
-            <p class="delay-300 fade-in">{t("section.about.description3")}</p>
+        <PageSection title={t("section.about.title")}
+                     class="text-center md:text-start text-xl lg:text-3xl whitespace-pre-line">
+
+            <div class="relative flex flex-col gap-8">
+                <img class="absolute hidden md:block h-150 w-150 rounded-full delay-100 saturate-50 object-cover opacity-10 mask-[radial-gradient(circle,black_30%,transparent_70%)] -top-25 -left-1/6"
+                     src="/pld.png"/>
+                <img class="absolute hidden md:block h-150 w-150 rounded-full delay-100 saturate-50 object-cover opacity-10 mask-[radial-gradient(circle,black_30%,transparent_70%)] -right-1/6"
+                     src="/luna-dog.png"/>
+
+                <p class="delay-100 fade-in">{t("section.about.description1")}</p>
+                <p class="delay-100 fade-in">{t("section.about.description2")}</p>
+                <p class="delay-300 fade-in">{t("section.about.description3")}</p>
+            </div>
+
         </PageSection>
 
         <PageSection id="skills" title={t("section.expertise.title")}>
