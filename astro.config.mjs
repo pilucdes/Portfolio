@@ -16,7 +16,8 @@ export default defineConfig({
 
   integrations: [icon({
     include:{
-      devicon: ['*']
+      devicon: ['*'],
+      mdi:['email-outline']
     }
   })]
 });
