@@ -32,10 +32,10 @@ export function getStaticPaths() {
                      class="text-center md:text-start text-xl lg:text-3xl whitespace-pre-line">
 
             <div class="relative flex flex-col gap-8">
-                <img class="absolute hidden md:block h-150 w-150 rounded-full delay-100 saturate-50 object-cover opacity-10 mask-[radial-gradient(circle,black_30%,transparent_70%)] -top-25 -left-1/6"
-                     src="/pld.png"/>
-                <img class="absolute hidden md:block h-150 w-150 rounded-full delay-100 saturate-50 object-cover opacity-10 mask-[radial-gradient(circle,black_30%,transparent_70%)] -right-1/6"
-                     src="/luna-dog.png"/>
+                <img alt="picture of me" class="absolute hidden md:block h-150 w-150 rounded-full delay-100 saturate-50 object-cover opacity-9 mask-[radial-gradient(circle,black_30%,transparent_70%)] -top-25 -left-1/6"
+                     src="/img/pld.webp"/>
+                <img alt="picture of my dog luna" class="absolute hidden md:block h-150 w-150 rounded-full delay-100 saturate-50 object-cover opacity-9 mask-[radial-gradient(circle,black_30%,transparent_70%)] -right-1/6"
+                     src="/img/luna-dog.webp"/>
 
                 <p class="delay-100 fade-in">{t("section.about.description1")}</p>
                 <p class="delay-100 fade-in">{t("section.about.description2")}</p>
@@ -74,7 +74,7 @@ export function getStaticPaths() {
         <PageSection id="projects" title={t("section.featuredprojects.title")}>
             <ProjectCard
                     href="https://github.com/pilouk/SnapToTable"
-                    imageUrl="https://storage.googleapis.com/cms-bgrem-deelvin-com/food_a691d3b07f/food_a691d3b07f.jpg"
+                    imageUrl="/img/snap.webp"
                     title={t("project.snap.title")}
                     description={t("project.snap.description")}>
 
