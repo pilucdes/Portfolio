@@ -35,7 +35,7 @@ export function getStaticPaths() {
         <PageSection id="skills" title={t("section.expertise.title")}>
             <div class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-10">
 
-                <ExpertiseCard title="Back End">
+                <ExpertiseCard title="Back End" class="delay-100">
                     <IconListItem text="C# | .NET 9" iconName="devicon:csharp"/>
                     <IconListItem text="Entity Framework" iconName="devicon:dot-net"/>
                     <IconListItem text="Node.js" iconName="devicon:nodejs"/>
@@ -44,15 +44,15 @@ export function getStaticPaths() {
                     <IconListItem text="PostgreSQL" iconName="devicon:postgresql"/>
                 </ExpertiseCard>
 
-                <ExpertiseCard title="Front End">
-                    <IconListItem text="HTML/CSS" iconName="devicon:html5"/>
-                    <IconListItem text="Angular 2" iconName="devicon:angularjs"/>
+                <ExpertiseCard title="Front End" class="delay-200">
+                    <IconListItem text="Tailwind CSS" iconName="devicon:tailwindcss"/>
+                    <IconListItem text="Angular 2" iconName="devicon:angular"/>
                     <IconListItem text="React" iconName="devicon:react"/>
                     <IconListItem text="Vue.js" iconName="devicon:vuejs"/>
                     <IconListItem text="Astro" iconName="devicon-plain:astro"/>
                 </ExpertiseCard>
 
-                <ExpertiseCard title={t("section.expertise.platformtooling")}>
+                <ExpertiseCard title={t("section.expertise.platformtooling")} class="delay-300">
                     <IconListItem text="Azure" iconName="devicon:azure"/>
                     <IconListItem text="AWS" iconName="devicon-plain:amazonwebservices-wordmark"/>
                     <IconListItem text="Docker" iconName="devicon:docker"/>
