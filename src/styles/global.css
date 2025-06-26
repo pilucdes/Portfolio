@@ -6,6 +6,17 @@
 @import "./components.css";
 @import "./effects.css";
 
+:root {
+    --color-primary-accent-rgb: 38, 70, 83;
+    --color-primary-rgb: 42, 157, 143;
+    --color-secondary-rgb: 233, 196, 106;
+    --color-accent-rgb: 244, 162, 97;
+    --color-accent2-rgb: 231, 111, 81;
+    --gradient-colors: linear-gradient(45deg, rgba(var(--color-primary-accent-rgb)), rgba(var(--color-primary-rgb)), rgba(var(--color-secondary-rgb)), rgba(var(--color-accent-rgb)),rgba(var(--color-accent2-rgb)));
+    --gradient-size: 400% 400%;
+    --gradient-duration: 20s;
+}
+
 @layer base {
     body {
         @apply text-gray-400;
