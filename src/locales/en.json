@@ -18,6 +18,6 @@
   "section.expertise.familiarwith": "Familiar with",
   "section.featuredprojects.title": "Featured projects",
   "project.snap.title": "Snap To Table - AI Recipe Generator",
-  "project.snap.description": "Architected and developed a full-stack AI application to generate recipes from food photos. Implemented a robust backend using .NET, CQRS, and Clean Architecture to handle image processing and AI model interaction. Created a responsive, cross-platform user experience using React Native.",
+  "project.snap.description": "Developed a full-stack AI application to generate recipes from food pictures. Implemented a robust backend using .NET, CQRS, and Clean Architecture to handle image processing and AI model interaction. Created a responsive, cross-platform user experience using React Native.",
   "section.connect.title": "Let's connect"
 }
