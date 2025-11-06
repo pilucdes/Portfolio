@@ -1,5 +1,5 @@
 ﻿export class AnimationService {
-    // 1. Store the observer as a private class property
+
     private inViewObserver: IntersectionObserver | null = null;
 
     public initialize(): void {
