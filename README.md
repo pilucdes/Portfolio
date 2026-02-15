@@ -2,35 +2,35 @@
 
 A personal portfolio built with [Astro](https://astro.build). It showcases projects and expertise with a simple, accessible design and localized content.
 
-## ✨ Features
+## Features
 
-- **Astro**: Island architecture for fast, content-first pages
-- **TypeScript**: Safer scripting and services
-- **Localization**: English and French locales (`/en`, `/fr`)
-- **Responsive UI**: Reusable cards and section components
+* **Astro**: Island architecture for fast, content-first pages
+* **TypeScript**: Safer scripting and services
+* **Localization**: English and French locales (`/en`, `/fr`)
+* **Responsive UI**: Reusable cards and section components
 
-## 🧱 Tech Stack
+## Tech Stack
 
-- **Framework**: Astro
-- **Language**: TypeScript
-- **Styling**: Vanilla CSS (`src/styles`)
-- **Icons/Assets**: Static assets in `public/`
+* **Framework**: Astro
+* **Language**: TypeScript
+* **Styling**: Vanilla CSS (`src/styles`)
+* **Icons/Assets**: Static assets in `public/`
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 /
 ├── astro.config.mjs
 ├── public/
-│   └── img/                # Portfolio images & media
+│   └── img/                 # Portfolio images & media
 ├── src/
 │   ├── components/
-│   │   ├── cards/          # UI cards (projects, expertise)
-│   │   ├── sections/       # Page sections (hero, header, etc.)
+│   │   ├── cards/           # UI cards (projects, expertise)
+│   │   ├── sections/        # Page sections (hero, header, etc.)
 │   │   └── IconListItem.astro
 │   ├── layouts/
 │   │   └── Layout.astro
-│   ├── locales/            # i18n resources (JSON)
+│   ├── locales/             # i18n resources (JSON)
 │   │   ├── en.json
 │   │   └── fr.json
 │   ├── pages/
@@ -48,4 +48,5 @@ A personal portfolio built with [Astro](https://astro.build). It showcases proje
 │       └── global.css
 ├── package.json
 └── tsconfig.json
+
 ```
